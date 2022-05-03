@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  /* max-width: 1440px; */
+  margin: auto;
+  font-size: 18px;
+}
+header {
+  height: 90vh;
+  width: 100%;
+  background-image: url(/images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.nav__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 50px;
+}
+.hamburger {
+  display: none;
+}
+.nav__item {
+  list-style-type: none;
+  display: inline-block;
+  flex-direction: row;
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+}
+
+.nav__links {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+.nav__link:hover {
+  color: rgb(31, 142, 233);
+}
+.btn__contact {
+  text-transform: uppercase;
+  color: black;
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 50px;
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.btn__contact:hover {
+  background-color: rgb(147, 206, 255);
+  color: white;
+}
+.header__logo {
+  width: 15%;
+}
+
+.header__title {
+  margin: 60px auto;
+  color: white;
+  font-family: 'Fraunces', serif;
+
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  padding: 50px;
+  width: 100%;
+}
+.down__arrow {
+  padding: 50px;
+}
+.services__container {
+  /* max-width: 1440px; */
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  flex-grow: 1;
+}
+
+.section {
+  display: flex;
+  background-color: #fffbf8;
+  margin: 0;
+  white-space: 0;
+  font-size: 0;
+}
+
+.section__image {
+  width: 50%;
+}
+.section__image img {
+  width: 100%;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  align-content: space-between;
+  padding: 200px;
+  /* height: auto; */
+  font-size: 18px;
+  gap: 50px;
+  min-height: 400px;
+}
+
+.section__title {
+  font-family: 'Fraunces', serif;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: hsl(212, 27%, 19%);
+}
+
+.section__text {
+  font-family: 'Barlow', sans-serif;
+  color: hsl(232, 10%, 55%);
+}
+
+.transform__section a {
+  line-height: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Fraunces', serif;
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
+  border-bottom: 6px hsl(51, 73%, 71%) solid;
+  border-radius: 5px;
+  align-self: flex-start;
+  transition: all 0.3s;
+}
+
+.transform__section a:hover {
+  border-bottom: 6px hsl(51, 100%, 49%) solid;
+}
+.standout__section a {
+  line-height: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Fraunces', serif;
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
+  border-bottom: 6px hsl(8, 71%, 81%) solid;
+  border-radius: 6px;
+  align-self: flex-start;
+  padding: 0 4px;
+  transition: all 0.3s;
+}
+
+.standout__section a:hover {
+  border-bottom: 6px hsl(7, 99%, 70%) solid;
+}
+
+.graphic__image img {
+  width: 100%;
+}
+.graphic {
+  position: relative;
+  width: 50%;
+}
+.graphic__article {
+  position: absolute;
+  top: 60%;
+  text-align: center;
+  width: 60%;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.graphic__title {
+  font-size: 2rem;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  color: hsl(167, 40%, 24%);
+}
+
+.graphic__article p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: hsl(168, 34%, 41%);
+}
+.photography {
+  position: relative;
+  width: 50%;
+}
+.photography__image img {
+  width: 100%;
+}
+
+.photography__article {
+  position: absolute;
+  top: 60%;
+  text-align: center;
+  width: 60%;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.photography__title {
+  font-size: 2rem;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  color: hsl(198, 62%, 26%);
+}
+
+.photography__article p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: hsl(198, 62%, 26%);
+}
+
+.testimonial__text {
+  text-align: center;
+}
+
+.testimonials__container {
+  background-color: #fffbf8;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding: 80px;
+}
+
+.testimonials__title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 10px;
+  color: hsl(210, 4%, 67%);
+  grid-column: span 3;
+  grid-row: 1/2;
+  align-self: center;
+  justify-self: center;
+}
+
+.testimonials__user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-row: 2/5;
+  gap: 50px;
+  padding: 40px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+  color: hsl(212, 27%, 19%);
+}
+
+.testimonials__user img {
+  border-radius: 100%;
+  width: 100px;
+  height: auto;
+}
+
+.testiomonial__name {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.testimonial__position {
+  color: hsl(210, 4%, 67%);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 1;
+  font-size: 0;
+}
+.footer__gallery img {
+  width: 100%;
+}
+
+.footer__info {
+  background-color: hsl(168, 39%, 60%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  gap: 50px;
+}
+
+.footer__nav {
+  display: flex;
+  width: 25%;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.footer__logo {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__item {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+  color: hsl(168, 34%, 41%);
+}
+
+.footer__item:hover {
+  color: white;
+  transition: all 0.3s linear;
+}
+.social__media {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+}
+
+.media__item:hover .media__icon {
+  fill: white;
+  transition: all 0.3s ease-out;
+}
+.attribution {
+  font-size: 20px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}
