@@ -13,7 +13,7 @@ body {
 header {
   height: 90vh;
   width: 100%;
-  background-image: url(/images/desktop/image-header.jpg);
+  background-image: url(images/desktop/image-header.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -96,12 +96,9 @@ header {
   padding: 50px;
 }
 .services__container {
-  /* max-width: 1440px; */
-  /* width: 100%; */
   display: flex;
   flex-direction: column;
-  justify-items: flex-start;
-  flex-grow: 1;
+  
 }
 
 .section {
