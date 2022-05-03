@@ -333,7 +333,6 @@ header {
 }
 .footer__item {
   text-decoration: none;
-  color: white;
   display: inline-block;
   font-family: 'Barlow', sans-serif;
   font-size: 18px;
@@ -350,12 +349,11 @@ header {
   justify-content: space-between;
 }
 
-.media__item:hover .media__icon {
-  fill: white;
-  transition: all 0.3s ease-out;
+.media__item :hover {
+  color: #fffb;
 }
-.attribution {
-  font-size: 20px;
-  font-family: 'Barlow', sans-serif;
-  font-weight: 600;
+
+.media__link:hover img {
+  filter: invert(60%) sepia(50%) saturate(250%) brightness(250%);
+  transition: all 0.3s linear;
 }
