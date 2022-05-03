@@ -27,7 +27,7 @@
   }
 
   .header__container {
-    background-image: url(/images/mobile/image-header.jpg);
+    background-image: url(images/mobile/image-header.jpg);
     height: 600px;
   }
 
@@ -65,7 +65,7 @@
     flex-direction: column;
   }
   .graphic {
-    background-image: url(/images/mobile/image-graphic-design.jpg);
+    background-image: url(images/mobile/image-graphic-design.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: auto;
@@ -86,7 +86,7 @@
     font-size: 14px;
   }
   .photography {
-    background-image: url(/images/mobile/image-photography.jpg);
+    background-image: url(images/mobile/image-photography.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: auto;
